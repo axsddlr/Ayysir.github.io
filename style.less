@@ -1,0 +1,94 @@
+// out: style.css
+body,html{
+  font-family: sans-serif;
+  webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#bossFab{
+  transition: transform 400ms;
+  transition-timing-function: cubic-bezier(.55,0,.1,1);
+}
+
+.mini{
+  transition: top 400ms;
+  transition-timing-function: cubic-bezier(.55,0,.1,1);
+}
+
+paper-drawer-panel{
+  background-color: #e0e0e0;
+  paper-header-panel{
+    background-color:#3f51b5;
+    color:white;
+    paper-toolbar{
+      height:70px;
+    }
+  }
+}
+
+.container{
+  display: table;
+  height:100%;
+  margin: 5px;
+}
+
+.name{
+  font-size: 2em;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#mainContainer{
+  background-color: #e0e0e0;
+  color: #212121;
+}
+
+@-webkit-keyframes loadContact{
+  0%{
+    transform:translate(-10%,0);
+    opacity:0;
+  }
+  100%{
+    transform:none;
+    opacity:1;
+  }
+}
+
+@keyframes loadContact{
+  0%{
+    opacity:0;
+    transform:translate(-10%,0);
+  }
+  100%{
+    transform:none;
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes loadBody{
+  0%{
+    opacity:0;
+    transform:translate(0,10px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform:none;
+    opacity: 1;
+  }
+}
+
+@keyframes loadBody{
+  0%{
+    opacity:0;
+    transform:translate(0,10px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform:none;
+    opacity: 1;
+  }
+}

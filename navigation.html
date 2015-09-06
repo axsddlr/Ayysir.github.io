@@ -1,0 +1,77 @@
+<link rel="import" href="../bower_components/paper-menu/paper-menu.html">
+
+<dom-module id="ayysir-navigation">
+  <style>
+    :host {
+      display: block;
+      height:100%;
+    }
+    paper-item{
+      display: block;
+      font-size: 1.2em;
+      padding:5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    paper-menu{
+      --paper-menu-background-color:#e0e0e0;
+      --paper-menu-color:#3f51b5;
+
+      --paper-menu-selected-item:{
+        transition:all 0.4s cubic-bezier(.55,0,.1,1) 0s;
+        transform:scale(1.05);
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.14), 0px 4px 5px 0px rgba(0, 0, 0, 0.098), 0px 1px 10px 0px rgba(0, 0, 0, 0.082);
+      };
+      --paper-menu-focused-item:{
+        margin-top:50px;
+      };
+      --paper-menu-focused-item-after:{
+        background-color: black;
+      };
+
+      animation:loadBody .5s 1 .0s;
+      animation-timing-function:cubic-bezier(.55,0,.1,1);
+      -webkit-animation:loadBody .5s 1 .0s;
+      -webkit-animation-timing-function:cubic-bezier(.55,0,.1,1);
+    }
+  </style>
+  <template>
+    <paper-menu selected="{{sel}}">
+      <template is="dom-repeat" items="{{list}}">
+        <paper-item data-index="{{index}}">{{item.text}}</paper-item>
+      </template>
+    </paper-menu>
+  </template>
+  <script>
+    var data = null;
+    function dynamicNavAdd(blah) {
+      if (data) {
+        data.push('list',{text:blah});
+      }
+    };
+    Polymer({
+      is:"ayysir-navigation",
+      listeners:{
+        tap:"handleTap"
+      },
+      handleTap: function(e) {
+        selected = data.sel;
+        var pages = document.querySelector('iron-pages');
+        pages.selected = selected;
+        document.querySelector('paper-drawer-panel').closeDrawer();
+      },
+      ready:function () {
+        data = this;
+        data.sel = selected;
+        data.list = [
+          {
+            text:"About Me"
+          },
+          {
+            text:"Projects"
+          }
+        ];
+      }
+    })
+  </script>
+</dom-module>
