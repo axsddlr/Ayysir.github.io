@@ -14,5 +14,14 @@
     "webcomponents"
   ],
   "license": "BSD",
-  "ignore": []
+  "ignore": [],
+  "_release": "0.7.12",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.12",
+    "commit": "044234d00f966292390d02cbe88184861e673cc7"
+  },
+  "_source": "git://github.com/Polymer/webcomponentsjs.git",
+  "_target": "*",
+  "_originalSource": "Polymer/webcomponentsjs"
 }
