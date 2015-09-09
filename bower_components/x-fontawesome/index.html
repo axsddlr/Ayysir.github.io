@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>x-fontawesome</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/x-fontawesome.html">
+</head>
+<body>
+
+  <!-- Using Custom Elements -->
+  <x-fontawesome></x-fontawesome>
+
+  <template is="auto-binding">
+    <div class="embiggen">
+      <template repeat="{{icon in icons}}">
+        <core-icon icon="{{icon}}"></core-icon>
+      </template>
+    </div>
+    <core-meta id="meta" type="iconset"></core-meta>
+  </template>
+
+  <p>An icon:</p>
+  <core-icon icon="fontawesome-icons:fa-smile-o"></core-icon>
+
+  <script>
+    addEventListener('template-bound', function(e) {
+      var template = e.target;
+      var setName = 'fontawesome-icons';
+      var icons = template.$.meta.byId(setName).iconNames;
+      template.icons = icons.map(function(ic){ console.log(setName + ':' +ic); return setName + ':' +ic });
+    });
+  </script>
+
+</body>
+</html>

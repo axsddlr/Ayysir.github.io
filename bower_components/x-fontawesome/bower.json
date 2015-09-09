@@ -1,0 +1,21 @@
+{
+    "name": "x-fontawesome",
+    "version": "0.2.0",
+    "description": "Component for using Font Awesome SVG Icons",
+    "license": "MIT",
+    "main": "dist/x-fontawesome.html",
+    "keywords": [
+        "polymer",
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#~0.3.3",
+        "core-icon": "Polymer/core-icon#master",
+        "core-iconset-svg": "Polymer/core-iconset-svg#master"
+    }
+}

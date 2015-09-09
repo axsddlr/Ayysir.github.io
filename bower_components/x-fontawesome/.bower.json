@@ -1,0 +1,32 @@
+{
+  "name": "x-fontawesome",
+  "version": "0.2.0",
+  "description": "Component for using Font Awesome SVG Icons",
+  "license": "MIT",
+  "main": "dist/x-fontawesome.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-icon": "Polymer/core-icon#master",
+    "core-iconset-svg": "Polymer/core-iconset-svg#master"
+  },
+  "homepage": "https://github.com/ruiramos/x-fontawesome",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "d7f6963bbe68300ed2c540c604e2179919426c27"
+  },
+  "_source": "git://github.com/ruiramos/x-fontawesome.git",
+  "_target": "~0.2.0",
+  "_originalSource": "x-fontawesome",
+  "_direct": true
+}
