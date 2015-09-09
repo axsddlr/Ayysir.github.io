@@ -35,13 +35,33 @@
         document.getElementById("bossFab").style['transform'] = "rotate(0deg)";
       }
     };
+
+    function gh(){
+        var form = document.createElement("form");
+        form.method = "GET";
+        form.action = "http://github.com/ayysir";
+        form.target = "_blank";
+        document.body.appendChild(form);
+        form.submit();
+    }
+    function dn(){
+        location.href = "http://forum.xda-developers.com/donatetome.php?u=4238916";
+    }
+    function mail(){
+        var form = document.createElement("form");
+        form.method = "GET";
+        form.action = "mailto:contact@ayysir.com";
+        form.target = "_blank";
+        document.body.appendChild(form);
+        form.submit();
+    }
   </script>
   <body unresolved fullbleed>
     <div id="fab">
       <paper-fab id="bossFab" onclick="toggle()" style="z-index:2;float:right;margin-top:20px;" icon="menu"></paper-fab>
-      <paper-fab class="mini" id="fab1" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:account-circle"></paper-fab>
-      <paper-fab class="mini" id="fab2" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:code"></paper-fab>
-      <paper-fab class="mini" id="fab3" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:payment"></paper-fab>
+      <paper-fab class="mini" id="fab1" onclick="gh()" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:account-circle"></paper-fab>
+      <paper-fab class="mini" id="fab2" onclick="dn()" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:code"></paper-fab>
+      <paper-fab class="mini" id="fab3" onclick="mail()" mini style="z-index:1;top: 36px;right: 16.5px;position: absolute;" icon="icons:payment"></paper-fab>
     </div>
     <div>
       <paper-drawer-panel>
