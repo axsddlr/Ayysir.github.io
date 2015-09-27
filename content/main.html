@@ -35,7 +35,7 @@
         <div class="content">
           <center>
            Welcome!
-           <body><img src="../content/avi.jpg" style="width:304px;height:228px;"></body>
+           <!--<body><img src="../content/avi.jpg" style="width:304px;height:228px;"></body>-->
           <i>"People are concerned about being first, as opposed to being better"</i>
           </center>
         </div>
@@ -46,13 +46,96 @@
           one
         </div>
       </div>
-      <!-- Nav 3 -->
+      <!-- Resume -->
       <div style="background-color:#e0e0e0;">
         <div class="content">
-          <center>
-          <embed src="Andre Saddler-Resume.pdf" width="800px" height="2100px" scrolling="yes">
-          </center>
+          <div class="clearfix">
+   
+<div id="contactDetails">
+  
+<paper-button raisedButton label="test" onclick="PDF()">PDF</paper-button>
+<paper-button raisedButton label="test" onclick="PDF()">DOCX</paper-button>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Macy's - Sales Associate</h2>
+					<p class="subDetails">November 2009 - Present</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</article>
+				
+				<article>
+					<h2>ParanoidAndroid - Developer</h2>
+					<p class="subDetails">2008 - Present</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Programming Experience: Java, C/C++, and python</li>
+					<li>Web Design: CSS/HTML</li>
+					<li>Operating Systems: Windows, Linux, Mac OSX</li>
+					<li>Technical Profiency</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>College/University</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+				</article>
+				
+				<article>
+					<h2>College/University</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
         </div>
+      </div>
       </div>
       <!-- Nav 4 -->
       <div style="background-color:#2962ff;">
@@ -70,5 +153,9 @@
         pages.sel = selected;
       }
     });
+    
+        function PDF(){
+        location.href = "https://github.com/Ayysir/Ayysir.github.io/raw/master/content/Andre%20Saddler-Resume.pdf";
+    }
   </script>
 </dom-module>

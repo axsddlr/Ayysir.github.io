@@ -22,6 +22,11 @@ paper-drawer-panel paper-header-panel {
 paper-drawer-panel paper-header-panel paper-toolbar {
   height: 70px;
 }
+
+paper-button {
+  background: #4285f4;
+  color: #fff;
+}
 .container {
   display: table;
   height: 100%;
