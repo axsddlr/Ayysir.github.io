@@ -11,6 +11,7 @@
     <link rel="import" href="bower_components/core-icons/core-icons.html">
     <link rel="import" href="bower_components/fontawesome-iconset/fa-all.html">
     <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-tooltip/paper-tooltip.html">
     <link rel="import" href="content/main.html">
     <link rel="import" href="content/navigation.html">
     <link rel="stylesheet" href="css/style.css">
@@ -69,6 +70,9 @@
       <paper-fab class="mini" id="fab1" onclick="gh()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;"  icon="fa:github-alt"></paper-fab>
       <paper-fab class="mini" id="fab2" onclick="dn()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;" icon="fa:paypal"></paper-fab>
       <paper-fab class="mini" id="fab3" onclick="mail()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;" icon="icons:mail"></paper-fab>
+      <paper-tooltip for="fab1" position="left">Github</paper-tooltip>
+      <paper-tooltip for="fab2" position="left">Donate</paper-tooltip>
+      <paper-tooltip for="fab3" position="left">Email</paper-tooltip>
     </div>
     <div>
       <paper-drawer-panel>
