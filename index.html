@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resume.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" sizes="196x196" href="content/avi.jpg">
+    <link rel="icon" sizes="196x196" href="images/favicon.jpg">
     <title>Ayysir</title>
     <meta name="theme-color" content="#3f51b5">
   </head>
@@ -31,6 +31,7 @@
         document.getElementById("fab1").style.top = "90px";
         document.getElementById("fab2").style.top = "135px";
         document.getElementById("fab3").style.top = "180px";
+        document.getElementById("fab4").style.top = "225px";
         document.getElementById("bossFab").style['transform'] = "rotate(180deg)";
         open = true;
       }else{
@@ -38,6 +39,7 @@
         document.getElementById("fab1").style.top = "36px";
         document.getElementById("fab2").style.top = "36px";
         document.getElementById("fab3").style.top = "36px";
+        document.getElementById("fab4").style.top = "36px";
         document.getElementById("bossFab").style['transform'] = "rotate(0deg)";
       }
     };
@@ -72,6 +74,16 @@
           toggle(); //close FAB
       }   
     }
+    
+    function lkdin(){
+        var form = document.createElement("form");
+        form.method = "GET";
+        form.action = "https://www.linkedin.com/pub/andre-s/12/190/b8a";
+        form.target = "_blank";
+        document.body.appendChild(form);
+        form.submit();
+        toggle(); //close FAB
+    }
   </script>
   <body unresolved fullbleed>
     <div id="fab">
@@ -79,9 +91,11 @@
       <paper-fab class="mini" id="fab1" onclick="gh()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;"  icon="fa:github-alt"></paper-fab>
       <paper-fab class="mini" id="fab2" onclick="dn()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;" icon="fa:paypal"></paper-fab>
       <paper-fab class="mini" id="fab3" onclick="mail()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;" icon="icons:mail"></paper-fab>
+      <paper-fab class="mini" id="fab4" onclick="lkdin()" mini style="z-index:1;top: 36px;right: 15.7px;position: absolute;" icon="fa:linkedin"></paper-fab>
       <paper-tooltip for="fab1" position="left">Github</paper-tooltip>
       <paper-tooltip for="fab2" position="left">Donate</paper-tooltip>
       <paper-tooltip for="fab3" position="left">Email</paper-tooltip>
+      <paper-tooltip for="fab4" position="left">Linkedin</paper-tooltip>
     </div>
     <div>
       <paper-drawer-panel>
