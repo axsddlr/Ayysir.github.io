@@ -1,0 +1,126 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.portfolio .col
+{
+    margin-bottom: 24px;
+}
+
+.portfolio h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.portfolio h6
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.portfolio hr
+{
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.portfolio .portfolio-holder
+{
+    clear: both;
+    text-align: center;
+}
+
+.portfolio img
+{
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+
+/*Side Nav tweaks*/
+.side-nav {
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.8); /* Side Nav Color */
+  filter: alpha(opacity=40);
+  z-index: 999;
+  overflow-y: auto;
+  will-change: left; }
+  .side-nav.right-aligned {
+    will-change: right;
+    right: -105%;
+    left: auto; }
+  .side-nav .collapsible {
+    margin: 0; }
+  .side-nav li {
+    float: none;
+    padding: 0 15px; }
+    .side-nav li:hover, .side-nav li.active {
+      background-color: #ddd; }
+  .side-nav a {
+    color: #444; /* Side Nav Items text color */
+    display: block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 15px; }
+
+.drag-target {
+  height: 100%;
+  width: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 998; }
+
+.side-nav.fixed a {
+  display: block;
+  padding: 0 15px;
+  color: #444; }
+
+.side-nav.fixed {
+  left: 0;
+  position: fixed; }
+  .side-nav.fixed.right-aligned {
+    right: 0;
+    left: auto; }
+
+@media only screen and (max-width : 992px) {
+  .side-nav.fixed {
+    left: -105%; }
+    .side-nav.fixed.right-aligned {
+      right: -105%;
+      left: auto; } }
+
+.side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
+  background-color: #ee6e73; }
+  .side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+    color: #fff; }
+
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 997;
+  will-change: opacity; }
