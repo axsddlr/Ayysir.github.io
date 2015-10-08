@@ -13,6 +13,13 @@
       padding:10px;
       color:white;
     }
+    div.paper-card-space {
+      margin-right:12px;
+    }
+    div.horizontal-section {
+      min-width: 130px;
+    }
+
     iron-pages > div{
       min-height: 100%;
       animation:loadContact .5s 1;
@@ -170,38 +177,42 @@
         </div>
       </div>
       </div>
-      <!-- Nav 4 -->
+      <!-- Projects -->
       <div style="background-color:#e0e0e0;">
-        <!-- First Card -->
-        <div class="row">
-          <div class="col s4">
-            <paper-card elevation="4" heading="ParanoidAndroid" class="pink"
-                image="https://lh3.googleusercontent.com/-x0jXe6LbH3w/AAAAAAAAAAI/AAAAAAAAJQw/8cutSSMURV4/photo.jpg">
-              <div class="class-content">
-                Custom software for Android operating system
-              </div>
-              <div class="card-actions">
-                <paper-button onclick="PAweb()">Webiste</paper-button>
-                <paper-button onclick="PAgh()">Github</paper-button>
-              </div>
-            </paper-card>
+        <div class="horizontal center-justified layout">
+          <div class="horizontal-section">
+            <div class="paper-card-space">
+              <paper-card heading="Paranoid Android"
+              image="images/pa.jpg">
+                <div class="card-content">
+                  Custom software for Android operating system
+                </div>
+                  <div class="card-actions">
+                    <paper-button onclick="PAweb()">Webiste</paper-button>
+                    <paper-button onclick="PAgh()">Github</paper-button>
+                  </div>
+              </paper-card>
+            </div>
           </div>
-          <!-- End -->
-          <!-- Second Card -->
-          <div class="col s4">
-            <paper-card elevation="4" heading="PAEK Updater" class="pink"
-                image="https://lh5.ggpht.com/jxudb1zkhacZaYUuy43pGpcVqUmGk_d3ATXFnHudtJh9h7gpQFYFEZnt0gj1eDmVgg=w300-rw">
-              <div class="class-content">
-                Over-the-air android kernel update system  
-              </div>
-              <div class="card-actions">
-                <paper-button onclick="PAweb()">Webiste</paper-button>
-                <paper-button onclick="PAgh()">Github</paper-button>
-              </div>
-            </paper-card>
+          
+          
+          <div class="horizontal-section">
+            <div class="paper-card-space">
+              <paper-card heading="PAEK"
+              image="images/paek.png">
+                <div class="card-content">
+                  Custom software for Android operating system
+                </div>
+                  <div class="card-actions">
+                    <paper-button class="colorful" onclick="PAEKweb()">Gplay</paper-button>
+                    <paper-button onclick="PAEKgh()">Github</paper-button>
+                  </div>
+              </paper-card>
+            </div>
           </div>
-          <!-- End -->
         </div>
+
+
       </div>
     </iron-pages>
   </template>
@@ -214,7 +225,7 @@
       }
     });
     
-        function PDF(){
+    function PDF(){
         location.href = "https://github.com/Ayysir/Ayysir.github.io/raw/master/content/Andre%20Saddler-Resume.pdf";
     }
     function PAweb(){
@@ -226,9 +237,20 @@
         form.submit();
     }
     function PAgh(){
-              var form = document.createElement("form");
+        var form = document.createElement("form");
         form.method = "GET";
         form.action = "http://github.com/AOSPA";
+        form.target = "_blank";
+        document.body.appendChild(form);
+        form.submit();
+    }
+    function PAEKweb(){
+        location.href = "https://play.google.com/store/apps/details?id=com.ayysir.paek";
+    }
+    function PAEKgh(){
+        var form = document.createElement("form");
+        form.method = "GET";
+        form.action = "https://github.com/Ayysir/PAEK_Updater";
         form.target = "_blank";
         document.body.appendChild(form);
         form.submit();
