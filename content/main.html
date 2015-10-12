@@ -19,7 +19,68 @@
     div.horizontal-section {
       min-width: 130px;
     }
+    
+    #cards {
+      @apply(--layout-horizontal);
+      @apply(--center-justified);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+    }
 
+@media all and (max-width: 640px) {
+    #cards {
+      @apply(--layout-vertical);
+      @apply(--center-justified);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+      border-radius: 2px;
+    }
+  
+}
+    #welcome-card {
+      @apply(--layout-horizontal);
+      @apply(--center-justified);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+      border-radius: 2px;
+    }
+
+@media all and (max-width: 640px) {
+    #welcome-card {
+      @apply(--layout-vertical);
+      @apply(--center-justified);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  
+}
+
+img {
+max-width: 100%;
+height: auto;
+width: auto\9; /* ie8 */
+}
+    
     iron-pages > div{
       min-height: 100%;
       animation:loadContact .5s 1;
@@ -38,14 +99,13 @@
   </style>
   <template>
     <iron-pages selected="{{sel}}">
-      <!-- Nav 1 -->
+      <!-- Welcome -->
       <div style="background-color:#e0e0e0;">
-        <div class="content">
-          <center>
-           <p>Welcome!</p>
-           <p><img src="../images/favicon.jpg"></p>
-          <p><i>"People are concerned about being first, as opposed to being better"</i></p>
-          </center>
+        <div id="welcome-card">
+              <div style="max-width:500px;">
+              <img src="../images/favicon.jpg">
+              <p><paper-card heading="People are concerned about being first, as opposed to being better"</paper-card></p>
+              </div>
         </div>
       </div>
       <!-- Nav 2 -->
@@ -179,39 +239,32 @@
       </div>
       <!-- Projects -->
       <div style="background-color:#e0e0e0;">
-        <div class="horizontal center-justified layout">
-          <div class="horizontal-section">
-            <div class="paper-card-space">
-              <paper-card heading="Paranoid Android"
-              image="images/pa.jpg">
-                <div class="card-content">
-                  Custom software for Android operating system
-                </div>
-                  <div class="card-actions">
-                    <paper-button onclick="PAweb()">Webiste</paper-button>
-                    <paper-button onclick="PAgh()">Github</paper-button>
-                  </div>
-              </paper-card>
-            </div>
-          </div>
-          
-          
-          <div class="horizontal-section">
-            <div class="paper-card-space">
-              <paper-card heading="PAEK"
-              image="images/paek.png">
-                <div class="card-content">
-                  Custom software for Android operating system
-                </div>
-                  <div class="card-actions">
-                    <paper-button class="colorful" onclick="PAEKweb()">Gplay</paper-button>
-                    <paper-button onclick="PAEKgh()">Github</paper-button>
-                  </div>
-              </paper-card>
-            </div>
-          </div>
-        </div>
-
+       <div id="cards">
+     <div class="paper-card-space">
+    <paper-card heading="ParanoidAndroid" class="white"
+                image="images/pa.jpg">
+      <div class="card-content">
+        Custom software for Android operating system      
+      </div>
+      <div class="card-actions">
+        <paper-button onclick="PAweb()">Webiste</paper-button>
+        <paper-button onclick="PAgh()">Github</paper-button>
+      </div>
+    </paper-card>
+    </div>
+         <div class="paper-card-space">
+        <paper-card heading="PAEK" class="white"
+                image="images/paek.png">
+      <div class="card-content">
+        Over-the-air update application for android OS     
+      </div>
+      <div class="card-actions">
+        <paper-button onclick="PAEKweb()">Webiste</paper-button>
+        <paper-button onclick="PAEKgh()">Github</paper-button>
+      </div>
+    </paper-card>
+    </div>
+</div>
 
       </div>
     </iron-pages>
