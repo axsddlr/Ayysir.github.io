@@ -1,0 +1,15 @@
+{ 
+"sky_walls": 
+	[ 
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-338781.jpg",
+			"name": "Test1"
+		},	
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-338780.jpg",
+			"name": "Test2"
+		}
+	]
+}
