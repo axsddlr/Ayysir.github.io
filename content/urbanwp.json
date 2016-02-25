@@ -1,10 +1,45 @@
 { 
 "urban_walls": 
-	[ 
+	[
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339700.jpg",
+			"name": "Test1"
+		},	
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339701.jpg",
+			"name": "Test1"
+		},	
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339702.jpg",
+			"name": "Test1"
+		},
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339703.jpg",
+			"name": "Test1"
+		},
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339705.jpg",
+			"name": "Test1"
+		},
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339706.jpg",
+			"name": "Test1"
+		},
+		{
+			"author": "Andre Saddler / IG: unn_dre",
+			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339710.jpg",
+			"name": "Test1"
+		},
 		{
 			"author": "Andre Saddler / IG: unn_dre",
 			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-336946.jpg",
-			"name": "Test1"
+			"name": "Test1-old"
 		},	
 		{
 			"author": "Andre Saddler / IG: unn_dre",
