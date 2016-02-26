@@ -1,6 +1,12 @@
 { 
 "all_walls": 
 	[ 
+		
+               {
+	                "author": "Andre Saddler / IG: unn_dre",
+                        "url": "http://i.imgur.com/pp7dsws.jpg",			
+                        "name": "Test1"	
+                },	
 		{
 			"author": "Andre Saddler / IG: unn_dre",
 			"url": "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-339700.jpg",
