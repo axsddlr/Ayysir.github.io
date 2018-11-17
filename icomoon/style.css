@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?s0buh2');
-  src:  url('fonts/icomoon.eot?s0buh2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?s0buh2') format('truetype'),
-    url('fonts/icomoon.woff?s0buh2') format('woff'),
-    url('fonts/icomoon.svg?s0buh2#icomoon') format('svg');
+  src:  url('https://github.com/Ayysir/Ayysir.github.io/tree/master/icomoon/fonts/icomoon.eot?s0buh2');
+  src:  url('https://github.com/Ayysir/Ayysir.github.io/edit/master/icomoon/fonts/icomoon.eot?s0buh2#iefix') format('embedded-opentype'),
+    url('https://github.com/Ayysir/Ayysir.github.io/edit/master/icomoon/fonts/icomoon.ttf?s0buh2') format('truetype'),
+    url('https://github.com/Ayysir/Ayysir.github.io/edit/master/icomoon/fonts/icomoon.woff?s0buh2') format('woff'),
+    url('https://github.com/Ayysir/Ayysir.github.io/edit/master/icomoon/fonts/icomoon.svg?s0buh2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
